@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "242684c5-45d6-4d79-b61f-50b5d40a07e4"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Prova1Bim-front": {
+    "ProjectLivro": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -40,7 +43,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Prova1Bim-front",
+            "outputPath": "dist/ProjectLivro",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,6 +53,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Prova1Bim-front:build:production"
+              "browserTarget": "ProjectLivro:build:production"
             },
             "development": {
-              "browserTarget": "Prova1Bim-front:build:development"
+              "browserTarget": "ProjectLivro:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,11 +106,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Prova1Bim-front:build"
+            "browserTarget": "ProjectLivro:build"
           }
         }
       }
     }
   },
-  "defaultProject": "Prova1Bim-front"
+  "defaultProject": "ProjectLivro"
 }

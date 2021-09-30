@@ -1,0 +1,35 @@
+<div class="container-form">
+
+  <h1 mat-dialog-title>Novo automóvel</h1>
+  <div mat-dialog-content>
+    <form class="example-form" [formGroup]="automovelForm">
+      <div class="container-contato" fxLayout="row wrap">
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Modelo</mat-label>
+          <input matInput placeholder="" formControlName="modelo" name="modelo" />
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Marca</mat-label>
+          <input matInput placeholder="" formControlName="marca" name="marca" />
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Ano</mat-label>
+          <input matInput placeholder="" formControlName="ano" name="ano" />
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Preço</mat-label>
+          <input matInput placeholder="" formControlName="preco" name="preco" />
+        </mat-form-field>
+      </div>
+
+    </form>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-raised-button color="warn" (click)="cadastrarAutomovel()">Cadastrar automóvel</button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<mat-list>
+  <mat-list-item *ngFor="let carros of carrosRegistrados">
+    <mat-icon matListIcon>drive_eta</mat-icon>
+    <h2 class="card-title" color="warn" matLine><b>{{carros.modelo}}</b></h2>
+    <p matLine><span>Marca: {{carros.marca}} </span></p>
+    <p matLine><span>Ano: {{carros.ano}} </span></p>
+    <p matLine><span>Preço: R$ {{carros.preco}} </span></p>
+  </mat-list-item>
+</mat-list>
